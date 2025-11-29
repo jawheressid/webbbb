@@ -1,0 +1,19 @@
+# Installation guide for a fresh Windows setup
+#
+# 1. Install Python 3.11+ (64-bit) and ensure it is on PATH.
+# 2. Open PowerShell in this project folder.
+# 3. Create a virtual environment:
+#      python -m venv .venv
+# 4. Activate it:
+#      .venv\Scripts\activate
+# 5. Upgrade pip and wheel:
+#      python -m pip install --upgrade pip wheel
+# 6. Install the project dependencies (run these commands in order to avoid resolver slowdowns):
+#      pip install -r requirements-base.txt
+#      pip install -r requirements-ml.txt
+#      pip install -r requirements-langchain.txt   # installs langchainhub last
+# 7. Optional sanity checks:
+#      python test_imports.py
+#      python test_env.py
+#
+# After these steps the environment mirrors the working setup on this machine.

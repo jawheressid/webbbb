@@ -1,0 +1,7 @@
+# Aggregated requirements file
+# Usage:
+#   pip install -r requirements-all.txt
+# This will sequentially install the base, ML, and LangChain stacks.
+-r requirements-base.txt
+-r requirements-ml.txt
+-r requirements-langchain.txt
